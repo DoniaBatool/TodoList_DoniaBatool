@@ -1,16 +1,9 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-//import chalkAnimation from "chalk-animation";
-
-
-
 
 let todoarr:string[]=["Ahmed","Ali"]
 
-
-
-  
 async function createtodo (todoarr:string[]){
     let answer= await inquirer.prompt(
     {
@@ -70,7 +63,8 @@ console.log(todoarr)
 }
 else if (answer.todo=="exit"){
 
-    console.log(chalk.bgGreenBright.italic.yellowBright("Thankyou for using this application"))
+console.log(chalk.bgGreenBright.italic.yellowBright
+    ("Thankyou for using this application"))
    
    
    }

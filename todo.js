@@ -1,7 +1,6 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-//import chalkAnimation from "chalk-animation";
 let todoarr = ["Ahmed", "Ali"];
 async function createtodo(todoarr) {
     let answer = await inquirer.prompt({
